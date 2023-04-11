@@ -1,5 +1,5 @@
 function sum(num) {
-    const value = Number(num) < 23 ? Number(num) : `${num}`.split('').reduce((acc, val) => acc + Number(val), 0);
+    const value = Number(num) > 22 ? `${num}`.split('').reduce((acc, val) => acc + Number(val), 0) : Number(num);
 
     if (parseInt(value) > 22) {
         return sum(value)
@@ -38,8 +38,6 @@ if (matrixLegendDesckEl) {
 }
 
 document.body.querySelector('.synastry_show').textContent = name;
-
-console.log(date, name);
 //////////////////////////////////////
 
 const point01El = document.getElementById('point-01'); //A
@@ -89,10 +87,10 @@ function setValueTo(firstEl, blueId, darkBlueId, greenId) {
 
 setValueTo(point01El, 'point-15', 'point-17', 'point-29');
 setValueTo(point02El, 'point-16', 'point-18', 'point-30');
-setValueTo(point06El, 'point-tl1', 'point-tl2', 'point-30');
-setValueTo(point07El, 'point-tr1', 'point-tr2', 'point-30');
-setValueTo(point09El, 'point-bl1', 'point-bl2', 'point-30');
-setValueTo(point08El, 'point-br1', 'point-br2', 'point-30');
+setValueTo(point06El, 'point-tl1', 'point-tl2');
+setValueTo(point07El, 'point-tr1', 'point-tr2');
+setValueTo(point09El, 'point-bl1', 'point-bl2');
+setValueTo(point08El, 'point-br1', 'point-br2');
 const point19El = document.getElementById('point-19');
 const point20El = document.getElementById('point-20');
 point19El.textContent = sum(Number(point04El.textContent) + Number(point10El.textContent));
@@ -141,7 +139,7 @@ document.querySelectorAll('.child_9 .dast8:nth-of-type(-n + 2)').forEach((el, in
     const elements = document.querySelectorAll(`.health-map-table tr td:nth-of-type(${1 + index})`);
     const elementsValue = [];
     elements.forEach((item) => {
-        elementsValue.push(item.textContent);
+        elementsValue.push(item.textContent || 0);
     });
     el.textContent = elementsValue.reduce((acc, value) => sum(acc + Number(value)), 0);
 })
