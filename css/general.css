@@ -834,38 +834,38 @@ td.td_chakra {
 }
 
 .health-map-table tr:nth-child(2) {
-    background: #993399 !important;
-    background-color: #993399 !important;
+    background: #993377 !important;
+    background-color: #993377 !important;
     color: white !important;
 }
 
 .health-map-table tr:nth-child(3) {
-    background: #3366ff !important;
+    background: #6633ff !important;
     color: white !important;
 }
 
 .health-map-table tr:nth-child(4) {
-    background: #33ccff !important;
+    background: #3388ff !important;
     color: white !important;
 }
 
 .health-map-table tr:nth-child(5) {
-    background: #66cc66 !important;
+    background: #8acc66 !important;
     color: white !important;
 }
 
 .health-map-table tr:nth-child(6) {
-    background: #ffff99 !important;
+    background: #ffee99 !important;
     color: black !important;
 }
 
 .health-map-table tr:nth-child(7) {
-    background: #ff9900 !important;
+    background: #ffc400 !important;
     color: white !important;
 }
 
 .health-map-table tr:nth-child(8) {
-    background: #cc3333 !important;
+    background: #cc4d33 !important;
     color: white !important;
 }
 
@@ -1335,38 +1335,38 @@ h6.synastry_show {
     }
 
     .health-map-table tr:nth-child(2) td, tr.child_2 td {
-        background: #993399 !important;
-        background-color: #993399 !important;
+        background: #993377 !important;
+        background-color: #993377 !important;
         color: white !important;
     }
 
     .health-map-table tr:nth-child(3) td {
-        background: #3366ff !important;
+        background: #6633ff !important;
         color: white !important;
     }
 
     .health-map-table tr:nth-child(4) td {
-        background: #33ccff !important;
+        background: #3388ff !important;
         color: white !important;
     }
 
     .health-map-table tr:nth-child(5) td {
-        background: #66cc66 !important;
+        background: #8acc66 !important;
         color: white !important;
     }
 
     .health-map-table tr:nth-child(6) td {
-        background: #ffff99 !important;
+        background: #ffee99 !important;
         color: black !important;
     }
 
     .health-map-table tr:nth-child(7) td {
-        background: #ff9900 !important;
+        background: #ffc400 !important;
         color: white !important;
     }
 
     .health-map-table tr:nth-child(8) td {
-        background: #cc3333 !important;
+        background: #cc4d33 !important;
         color: white !important;
     }
 
