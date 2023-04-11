@@ -135,17 +135,15 @@ setDataToTable('.dast6', 'point-05', 'point-05');
 setDataToTable('.dast7', 'point-11', 'point-10');
 setDataToTable('.dast8', 'point-03', 'point-04');
 
-document.querySelectorAll('.child_9 .dast8:nth-of-type(-n + 2)').forEach((el, index) => {
+document.querySelectorAll('.child_9 .dast8:nth-of-type(-n + 3)').forEach((el, index) => {
     const elements = document.querySelectorAll(`.health-map-table tr td:nth-of-type(${1 + index})`);
     const elementsValue = [];
     elements.forEach((item) => {
         elementsValue.push(item.textContent || 0);
     });
-    el.textContent = elementsValue.reduce((acc, value) => sum(acc + Number(value)), 0);
+    const value = elementsValue.reduce((acc, value) => acc + Number(value), 0);
+    el.textContent = sum(value + 0);
 })
-const sumOfPhysics = document.querySelector('.child_9 .dast8:nth-of-type(1)').textContent;
-const sumOfEnergy = document.querySelector('.child_9 .dast8:nth-of-type(2)').textContent;
-document.querySelector('.child_9 .dast8:nth-of-type(3)').textContent = sum(Number(sumOfPhysics) + Number(sumOfEnergy));
 
 ////////////////////////////////////////////////////////////////
 
